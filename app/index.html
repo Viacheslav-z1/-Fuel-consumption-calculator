@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel consumption calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <main class="main">
+    <div class="calculator">
+      <div class="container">
+        <div class="calculator-container">
+          <div class="calculator__title-inner">
+            <h1 class="calculator__title">
+              Fuel consumption calculator
+            </h1>
+            <img src="./images/logo.png" alt="img" class="calculator__logo">
+          </div>
+          <div class="calculator__inner">
+            <p class="calculator__text">
+              enter the distance **(km)
+            </p>
+            <input value="0" min="0" type="number" class="calculator__input" id="distance">
+            <p class="calculator__text">
+              enter the amount of fuel **(litre)
+            </p>
+            <input value="0" min="0" type="number" class="calculator__input" id="amount">
+
+            <button class="calculator__calculate" id="calculate">
+              calculate
+            </button>
+            <div class="calculator__result" id="result">
+              FUEL CONSUMPTION: <br> 0 L / 100km
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

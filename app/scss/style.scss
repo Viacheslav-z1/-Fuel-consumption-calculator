@@ -1,0 +1,110 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+
+
+
+
+.main {
+}
+.calculator {
+
+    margin-top: 100px;
+    text-align: center;
+		&__title-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            margin-bottom: 15px;
+		}
+
+		&__title {
+            text-transform: uppercase;
+		}
+
+		&__logo {
+            max-width: 150px;
+		}
+
+		&__inner {
+		}
+
+		&__text {
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #bababab9;
+            margin-bottom: 5px;
+		}
+
+		&__input {
+            width: 100%;
+            border: 1px solid #000000af;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: rgba(179, 181, 180, 0.131);
+            color: #fff;
+            font-size: 22px;
+		}
+
+		&__calculate {
+            padding: 20px;
+            cursor: pointer;
+            background-color: rgb(20, 55, 111);
+            border-radius: 20px;
+            border: none;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 22px;
+		}
+        &__result{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+}
+
+.calculator-container {
+    padding: 30px;
+    --border-size: 3px;
+  --border-angle: 0turn;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgb(7, 7, 46),
+      rgb(7, 7, 46) 50%,
+      rgb(7, 7, 46)
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 5s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  border-radius: 6px;
+
+}
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  
+
+
+
+
+@import 'media';

@@ -1,0 +1,30 @@
+@media(max-width: 650px){
+    .calculator{
+        &__title{
+            font-size: 20px;
+        }
+        &__logo{
+            max-width: 100px;
+        }
+        &__text{
+            font-size: 18px;
+        }
+        &__input{
+            margin-bottom: 7px;
+        }
+        &__calculate{
+            padding: 15px;
+            font-size: 19px;
+            margin-top: 10px;
+        }
+        &__result{
+            font-size: 20px;
+        }
+    }
+    .calculator-container{
+        padding: 10px;
+    }
+    .calculator{
+        margin-top: 30px;
+    }
+}
